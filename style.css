@@ -1,0 +1,30 @@
+body{
+    background:url("urso.jpg") fixed;
+}
+
+.cabecalho { 
+           margin:px;
+           background-color: rgb(248, 33, 33);
+           font-size:24px;
+           width:600px;
+           padding: 10px;
+           }
+
+ .corpo { 
+          width:600px;
+          padding: 10px;
+         background-color:green;
+        }
+
+.corpo2 { 
+          width:600px;
+          padding: 10px;
+         background-color:rgb(128, 0, 0);
+        }
+
+ .rodape {
+           width:600px;
+           padding: 10px;
+          background-color: blue;
+         }        
+                 
