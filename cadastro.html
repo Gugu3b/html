@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>FormulÃ¡rio</title>
+</head>
+<body>
+
+<?php
+
+/* Form que utiliza o metodo POST para enviar os dados 
+para a pagina de destino exemplo.php */
+?>
+<form action="exemplo.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" id="idade">
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+<?php
+/* Exemplo de como receber os dados enviados pelo formulario */
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $idade = $_POST["idade"];
+    echo "Nome: $nome <br>";
+    echo "Email: $email <br>";
+    echo "Idade: $idade <br>";
+} else {
+    echo "Nenhum dado enviado";
+}
+
+?>
+</body>
+</html>
+
+
